@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=MedievalSharp&display=swap');
+
+body{
+    background: rgb(200, 175, 113);
+    margin: 0%;
+    font-family: "Cinzel";
+}
+#menu{
+    user-select: none;
+    display : flex;
+    overflow : hidden;
+    align-items: center;
+    align-content: center;
+    margin: 0%;
+    justify-content: center;
+    cursor: pointer;
+}
+#menu a {
+    float: left;
+    display: block;
+    color: #e5e4e4;
+    text-align: center;
+    padding: 1em 5em;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: "Cinzel";
+    font-weight: 600;
+}
+  
+#menu a:hover {
+    background-color: rgb(159, 139, 87);
+    color: #ddd
+}
+  
+#menu a.active {
+    background-color: rgb(159, 139, 87);
+    color:#000000
+}
+  
+  /* Style the active class (and buttons on mouse-over) */
+#menu a.active:hover {
+    cursor: initial;
+}
+
+#Sheet{
+    width: 100%;
+    height: 100%;
+}
+
+.overlay{
+    display: flex;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+
+}
