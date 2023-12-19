@@ -16,22 +16,37 @@
     <div id="chSh">
       <img
         src="assets/images/DnD_5E_CharacterSheet_FormFillable-1.png"
-        id="Sheet"
+        class="Sheet"
       />
+      <form id="chShForm" autocomplete="off">
+        <div class="top">
+          <input id="charName" type="text" name="charName" required />
+          <input type="text" name="class" required />
+          <input type="text" name="background" required />
+          <input type="text" name="name" />
+          <input type="text" name="race" required />
+          <input type="text" name="alignment" />
+          <input type="text" name="experience" />
+        </div>
+      </form>
     </div>
+
     <div id="inv" style="display: none"></div>
+
     <div id="spell" style="display: none">
       <img
         src="assets/images/DnD_5E_CharacterSheet_FormFillable-3.png"
-        id="Sheet"
+        class="Sheet"
       />
     </div>
+
     <div id="appe" style="display: none">
       <img
         src="assets/images/DnD_5E_CharacterSheet_FormFillable-2.png"
-        id="Sheet"
+        class="Sheet"
       />
     </div>
+
     <div id="blank" style="display: none"></div>
   </div>
 </body>
