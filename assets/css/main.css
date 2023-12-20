@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=MedievalSharp&display=swap");
-
+html {
+  font-family: "Cinzel";
+}
 body {
   margin: 0%;
-  font-family: "Cinzel";
+  background-image: url("//assets/images/wooden-floor-background.png");
 }
 #menu {
   background-color: rgb(181, 160, 105);
@@ -43,8 +45,8 @@ body {
 }
 
 .Sheet {
-  width: 100%;
-  height: 100%;
+  max-width: 70em;
+  height: 70em;
   user-select: none;
   -webkit-user-drag: none;
   user-select: none;
@@ -54,6 +56,7 @@ body {
 }
 
 .overlay {
+  font-family: "Cinzel";
   display: flex;
   margin: auto;
   width: 70%;
@@ -64,6 +67,34 @@ body {
   z-index: 999;
   top: 7em;
 }
-#charName {
+.top-left {
+  float: left;
+  padding: 2em 9.3em 0em 5em;
+  overflow: hidden;
+}
+input {
+  font-family: "Cinzel";
+  font-weight: 400;
+  width: 11em;
   border: none;
+  background-color: #00000000;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.top-top-right {
+  margin-top: 0.7em;
+  overflow: hidden;
+}
+.top-bottom-right {
+  overflow: hidden;
+  margin-top: 1em;
+}
+#background {
+  width: 10em;
+}
+#alignment {
+  width: 10em;
 }
