@@ -4,7 +4,9 @@ html {
 }
 body {
   margin: 0%;
-  background-image: url("//assets/images/wooden-floor-background.png");
+  background-image: url("/assets/images/wooden-floor-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #menu {
   background-color: rgb(181, 160, 105);
@@ -12,10 +14,12 @@ body {
   display: flex;
   overflow: hidden;
   align-items: center;
-  align-content: center;
+  width: 100%;
   margin: 0%;
   justify-content: center;
   cursor: pointer;
+  position: fixed;
+  top: 0;
 }
 #menu a {
   float: left;
@@ -27,6 +31,7 @@ body {
   font-size: 100%;
   font-family: "Cinzel";
   font-weight: 600;
+  width: 20%;
 }
 
 #menu a:hover {
@@ -54,13 +59,13 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-
 .overlay {
   font-family: "Cinzel";
   display: flex;
   margin: auto;
   width: 70%;
   height: 70%;
+  position: relative;
 }
 #chShForm {
   position: absolute;
